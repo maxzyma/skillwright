@@ -6,11 +6,12 @@ Agent skills built to one method — and the method itself.
 
 |  |  |
 |---|---|
-| **Origin** | A published skill that does real work in 321 bytes, because its name carries a practice the model already knows |
-| **Core idea** | Borrow the name; spend the body cancelling what the name drags in and pinning the output form |
+| **Core idea** | Context is not storage — it is the solution space the model would otherwise search. Only two kinds of line earn space: its blind spot, and its prior |
+| **The bet** | A borrowed term appreciates as the model improves; a hand-built taxonomy becomes a liability that overrides what the model later learned |
+| **Clearest instance** | A published skill that does real work in 321 bytes, because its name is a term that already carries a practice |
+| **What follows** | Borrow the term; spend the body cancelling what it drags in and pinning the output form |
 | **Two conditions** | The term must be one the model has seen, *and* the sense you need must be the one it points at |
 | **Where it stops** | Skills that produce a judgement rather than an artefact do not get to be two clauses long |
-| **The bet** | A borrowed term appreciates as the model improves; a hand-built taxonomy becomes a liability that overrides what the model later learned |
 | **What makes this repo different** | Every skill ships a **design record**: the four decisions behind it. Cannot fill it, does not go in |
 
 ## What this is
@@ -24,42 +25,7 @@ trigger width.
 
 Skills: [`skill-design`](skills/skill-design) · [`heuristic-evaluation`](skills/heuristic-evaluation)
 
-## Origin
-
-Anthropic's `eli5` skill is **321 bytes** — frontmatter and two lines of body. No audience taxonomy,
-no analogy library, no tone rules, no examples, no checklist, no code. It produces good explanations
-anyway.
-
-Provenance, because this is often reported wrong: it is by an Anthropic engineer on the Claude Code
-team, distributed through `anthropics/claude-plugins-community`, a **community** marketplace
-Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
-`anthropics/claude-plugins-official`). Employee-authored, community-distributed — which affects what
-support you can expect, not what the artefact demonstrates.
-
-## Core idea
-
-**`ELI5` is not a description. It is a genre.** It has communities, conventions and an enormous
-number of worked examples on the open internet. Naming it pulls all of that in at once, and the
-pretrained knowledge of what the genre looks like done well outweighs any audience taxonomy someone
-could write by hand.
-
-So the body does not explain how to explain. It does two other things:
-
-1. **Cancels the name's side effect.** Read literally, ELI5 produces baby talk — you do not want
-   "imagine you have a box of crayons" about your auth module. The body restates the audience as
-   someone who knows nothing about the *topic*: the compression is kept, the age is dropped.
-2. **Pins the output form.** An HTML artifact, big pictures, few words. The form then does the rest
-   — you cannot stack jargon inside that constraint.
-
-**The leverage and its correction live in different places.** The genre activation sits in `name` and
-`description`, which is also where trigger routing and the user's own reading happen; the correction
-and the form constraint sit in the body. Neither dilutes the other.
-
-The commit history shows the author tuning exactly these two things and nothing else: `an idiot that
-knows nothing` → `someone who knows nothing`, and `in a HTML page` → `a HTML artifact`. The
-`description` was never changed.
-
-## What context is for
+## The core idea
 
 **Context is not storage. It is the solution space the model would otherwise search.**
 
@@ -82,6 +48,41 @@ Only those two earn space. Every other line is a judgement you took out of its h
 
 That is what LLM-native means here: not doing the work and handing it over — **leaving the work to
 it**.
+
+## The clearest instance
+
+Anthropic's `eli5` skill is **321 bytes** — frontmatter and two lines of body. No audience taxonomy,
+no analogy library, no tone rules, no examples, no checklist, no code. It produces good explanations
+anyway.
+
+Provenance, because this is often reported wrong: it is by an Anthropic engineer on the Claude Code
+team, distributed through `anthropics/claude-plugins-community`, a **community** marketplace
+Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
+`anthropics/claude-plugins-official`). Employee-authored, community-distributed — which affects what
+support you can expect, not what the artefact demonstrates.
+
+## What follows: borrow before you rebuild
+
+**`ELI5` is not a description. It is a genre.** It has communities, conventions and an enormous
+number of worked examples on the open internet. Naming it pulls all of that in at once, and the
+pretrained knowledge of what the genre looks like done well outweighs any audience taxonomy someone
+could write by hand.
+
+So the body does not explain how to explain. It does two other things:
+
+1. **Cancels the name's side effect.** Read literally, ELI5 produces baby talk — you do not want
+   "imagine you have a box of crayons" about your auth module. The body restates the audience as
+   someone who knows nothing about the *topic*: the compression is kept, the age is dropped.
+2. **Pins the output form.** An HTML artifact, big pictures, few words. The form then does the rest
+   — you cannot stack jargon inside that constraint.
+
+**The leverage and its correction live in different places.** The genre activation sits in `name` and
+`description`, which is also where trigger routing and the user's own reading happen; the correction
+and the form constraint sit in the body. Neither dilutes the other.
+
+The commit history shows the author tuning exactly these two things and nothing else: `an idiot that
+knows nothing` → `someone who knows nothing`, and `in a HTML page` → `a HTML artifact`. The
+`description` was never changed.
 
 ## Two conditions, and they are independent
 
@@ -169,6 +170,7 @@ Stated so you can weigh the method rather than take it:
 
 | Claim | Support | Weight |
 |---|---|---|
+| Context as solution space (the core idea) | argued, not measured here; the attention dilution and position effects it leans on are documented in the literature but not reproduced in this repository | argued |
 | Borrowing beats rebuilding | 321 B against a same-named community implementation of ~8 KB doing comparable work | reasonable |
 | The three name cases | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |
