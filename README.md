@@ -16,26 +16,17 @@ Agent skills built to one method — and the method itself.
 
 ## What this is
 
-Two things in one repository: a small set of agent skills, and the method they were built to.
+A `-wright` is someone who makes things — shipwright, playwright. But every skill is designed by
+someone; *designed* on its own claims nothing.
 
-A `-wright` is someone who makes things — shipwright, playwright, wheelwright. But every skill is
-designed by someone — *designed* on its own claims nothing. What separates these is narrower, and
-checkable:
+**The difference here is order: the name and the trigger are settled before the body exists.** Most
+skills are written body-first — rules go down, a label goes on top, and the description ends up
+describing the rules. Here it runs the other way: which existing term to take, what it drags in, what
+form the output is pinned to, how wide the trigger opens. Four decisions first, and **the body is the
+remainder**.
 
-**The name and the trigger are settled before the body exists.** Most skills are written body-first:
-the rules go down, a label goes on top, and the description is whatever ends up describing the rules.
-Here the order is inverted — which existing term to take, what it drags in, what form the output is
-pinned to, and how wide the trigger opens are decided first. **The body is only what those four
-decisions left over.**
-
-The inversion leaves evidence:
-
-- every skill's `README.md` states the four decisions, so you can hold the artefact against them
-- that record is the **admission gate, not documentation** — a skill that cannot fill it does not go in
-- the method those four questions come from is in this README, so you can use it to find the skills
-  here that break it
-
-Skills: [`skill-design`](skills/skill-design) · [`heuristic-evaluation`](skills/heuristic-evaluation)
+That order leaves traces, and the questions that produced them are below — enough to audit this
+repository against itself.
 
 ## The core idea
 
