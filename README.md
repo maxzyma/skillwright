@@ -19,8 +19,8 @@ Agent skills built to one method — and the method itself.
 Two things in one repository: a small set of agent skills, and the method they were built to.
 
 A `-wright` is someone who makes things — shipwright, playwright, wheelwright. But every skill is
-designed by someone, so *designed* on its own claims nothing. The claim here is narrower, and it can
-be checked:
+designed by someone — *designed* on its own claims nothing. What separates these is narrower, and
+checkable:
 
 **The name and the trigger are settled before the body exists.** Most skills are written body-first:
 the rules go down, a label goes on top, and the description is whatever ends up describing the rules.
@@ -28,7 +28,7 @@ Here the order is inverted — which existing term to take, what it drags in, wh
 pinned to, and how wide the trigger opens are decided first. **The body is only what those four
 decisions left over.**
 
-Inverting the order leaves evidence behind, which is the reason for saying it out loud:
+The inversion leaves evidence:
 
 - every skill's `README.md` states the four decisions, so you can hold the artefact against them
 - that record is the **admission gate, not documentation** — a skill that cannot fill it does not go in
@@ -58,8 +58,7 @@ So what to pursue is not fewer words. It is that **every line is spent on someth
 know, or knows but will not do unprompted**. The first is its blind spot; the second is its prior.
 Only those two earn space. Every other line is a judgement you took out of its hands.
 
-That is what LLM-native means here: not doing the work and handing it over — **leaving the work to
-it**.
+LLM-native is not doing the work and handing it over. It is **leaving the work to it**.
 
 ## The clearest instance
 
@@ -67,7 +66,7 @@ Anthropic's `eli5` skill is **321 bytes** — frontmatter and two lines of body.
 no analogy library, no tone rules, no examples, no checklist, no code. It produces good explanations
 anyway.
 
-Provenance, because this is often reported wrong: it is by an Anthropic engineer on the Claude Code
+Often misreported as officially curated: it is by an Anthropic engineer on the Claude Code
 team, distributed through `anthropics/claude-plugins-community`, a **community** marketplace
 Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
 `anthropics/claude-plugins-official`). Employee-authored, community-distributed — which affects what
@@ -178,7 +177,7 @@ Each `README.md` also states how to tell the skill is working, and how to tell i
 
 ## Evidence standing
 
-Stated so you can weigh the method rather than take it:
+How much each claim rests on:
 
 | Claim | Support | Weight |
 |---|---|---|
