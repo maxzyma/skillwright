@@ -10,6 +10,7 @@ Agent skills built to one method — and the method itself.
 | **Core idea** | Borrow the name; spend the body cancelling what the name drags in and pinning the output form |
 | **Two conditions** | The term must be one the model has seen, *and* the sense you need must be the one it points at |
 | **Where it stops** | Skills that produce a judgement rather than an artefact do not get to be two clauses long |
+| **The bet** | A borrowed term appreciates as the model improves; a hand-built taxonomy becomes a liability that overrides what the model later learned |
 | **What makes this repo different** | Every skill ships a **design record**: the four decisions behind it. Cannot fill it, does not go in |
 
 ## What this is
@@ -57,6 +58,30 @@ and the form constraint sit in the body. Neither dilutes the other.
 The commit history shows the author tuning exactly these two things and nothing else: `an idiot that
 knows nothing` → `someone who knows nothing`, and `in a HTML page` → `a HTML artifact`. The
 `description` was never changed.
+
+## What context is for
+
+**Context is not storage. It is the solution space the model would otherwise search.**
+
+Every line you write narrows a range it would have explored on its own. So the length of a prompt was
+never a cost question — it is a measure of **how much you decided on its behalf**.
+
+A shorter prompt wins at equal quality not because it saved room, but because **the judgement stayed
+on the model's side**. One rule fewer is one more decision left to it.
+
+And this is the only way of writing that **grows as the model grows**. A borrowed term is worth more
+next year: every level the model gains in understanding that genre, your prompt gains for free. A
+hand-built taxonomy is a liability next year: it welds your current understanding into the body and
+then **overrides** the better answer the model has since learned.
+
+**If you are betting the models get stronger, do not write today's understanding down as a rule.**
+
+So what to pursue is not fewer words. It is that **every line is spent on something the model cannot
+know, or knows but will not do unprompted**. The first is its blind spot; the second is its prior.
+Only those two earn space. Every other line is a judgement you took out of its hands.
+
+That is what LLM-native means here: not doing the work and handing it over — **leaving the work to
+it**.
 
 ## Two conditions, and they are independent
 
