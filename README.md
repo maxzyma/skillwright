@@ -11,34 +11,23 @@ skill ships a **design record** stating the four decisions behind it.
 Skills in this repository: [`skill-design`](skills/skill-design) ·
 [`heuristic-evaluation`](skills/heuristic-evaluation). What follows is why they look the way they do.
 
-## Two skills, same name, 25× apart
+## What 321 bytes buys
 
-Search for an ELI5 skill and you find two.
+Anthropic's `eli5` skill is **321 bytes**: frontmatter and two lines of body. No audience taxonomy,
+no analogy library, no tone rules, no examples, no checklist, no code.
 
-|  | Anthropic's `eli5` | `DreambigOu/ELI5` |
-|---|---|---|
-| `SKILL.md` | **321 bytes** | ~8 KB |
-| Audience model | one clause: someone who knows nothing about the topic | 20+ categories by age, education, role, relationship, each with prescribed tone and analogy sources |
-| Output | an HTML artifact, big pictures, few words | plain text |
-| Bundled | nothing | an eval harness |
+It works because `ELI5` is not a description — it is an established explanation genre with its own
+communities, its own conventions and an enormous number of worked examples on the open internet.
+Naming it pulls all of that in at once, and the pretrained knowledge of "what this genre looks like
+done well" outweighs any audience taxonomy someone could write by hand.
 
-They do comparable work. The difference is not thoroughness — it is **whether the author rebuilt the
-knowledge or borrowed it**.
-
-`ELI5` is not a description. It is an established explanation genre with its own communities, its own
-conventions and an enormous number of worked examples on the open internet. Naming it pulls all of
-that in at once. The 8 KB version enumerates by hand what the 321-byte version gets from four
-characters in a filename.
-
-Provenance, stated precisely because it is often reported wrong: the small one is by an Anthropic
-engineer on the Claude Code team, distributed through `anthropics/claude-plugins-community` — a
-**community** marketplace Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
+Provenance, stated precisely because it is often reported wrong: it is by an Anthropic engineer on
+the Claude Code team, distributed through `anthropics/claude-plugins-community` — a **community**
+marketplace Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
 `anthropics/claude-plugins-official`). Employee-authored, community-distributed. That distinction
 matters for what support you can expect, not for what the artefact demonstrates.
 
-## What the 321 bytes actually spend themselves on
-
-Two clauses, and neither of them explains how to explain things:
+Its two body clauses spend themselves on something other than explaining how to explain:
 
 1. **It cancels the name's side effect.** Taken literally, ELI5 produces baby talk — you do not want
    "imagine you have a box of crayons" about your auth module. So the body restates the audience as
@@ -147,7 +136,7 @@ Stated so you can weigh the method rather than take it:
 
 | Claim | Support | Weight |
 |---|---|---|
-| Borrowing beats rebuilding | 321 B vs ~8 KB on the same name, comparable work | reasonable |
+| Borrowing beats rebuilding | 321 B against a same-named community implementation of ~8 KB doing comparable work | reasonable |
 | The three name cases | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |
 | Default-narrow triggers | four skills binding to explicit invocation, two authors, one counter-sample | moderate |
