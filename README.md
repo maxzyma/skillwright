@@ -87,7 +87,7 @@ knows nothing` → `someone who knows nothing`, and `in a HTML page` → `a HTML
 
 | Axis | Question | Fails when |
 |---|---|---|
-| **Signal strength** | Has the model seen this term at all? | In-house names, personal coinages, team jargon |
+| **Signal strength** | Has the model seen this term at all? | In-house terms, personal coinages, team jargon |
 | **Sense alignment** | Of its senses, is the one you need the dominant one? | `design tree` reads as a CAD feature tree, not a hierarchy of design decisions |
 
 A term can be very strong on the first axis and wrong on the second. **That combination is the one
@@ -95,21 +95,21 @@ people miss** — it produces skills whose bodies assume an activation that is g
 
 ## Where the method stops
 
-**Judgement does not compress like execution.** ELI5 produces a thing, so one name mobilises the
+**Judgement does not compress like execution.** ELI5 produces a thing, so one term mobilises the
 whole practice. A skill that produces a *conclusion* — is this page usable, is this name doing its
 job — activates at best one criterion per term, and the **combination** of criteria is the judgement.
-Composites of several decisions rarely have names of their own, so those bodies do not get short.
+Composites of several decisions rarely have terms of their own, so those bodies do not get short.
 
 Two moves keep them from getting long by default:
 
 - **Recurse once.** The composite may have no name, but the criteria you write have vocabulary of
-  their own, and it is often borrowable. `skill-design` is the case in point: the whole has no name,
+  their own, and it is often borrowable. `skill-design` is the case in point: the whole has no term,
   yet `precising definition`, `stipulative definition` and `false trigger / missed trigger` each
   carry a concept the body would otherwise have to spell out.
-- **Split when the decisions need not be made together.** Several skills that each borrow a name beat
+- **Split when the decisions need not be made together.** Several skills that each borrow a term beat
   one that borrows none.
 
-**A borrowed name also brings preconditions you may not be able to meet.** Heuristic evaluation
+**A borrowed term also brings preconditions you may not be able to meet.** Heuristic evaluation
 assumes three to five independent evaluators; Nielsen's own figures put one evaluator at roughly 35%
 of the problems present. One agent is one evaluator. When that happens, the skill says so **in its
 own output** — otherwise a short findings list reads as a clean bill of health.
@@ -118,13 +118,13 @@ own output** — otherwise a short findings list reads as a clean bill of health
 
 Answered before a body is written, and answerable of any skill that already exists:
 
-1. **Which case is the name in?**
+1. **Which case is the term in?**
    - ① the sense you need is the term's only sense → borrow it; the body then only removes the side
      effect and pins the form
    - ② the sense is among its senses but not the dominant one → borrow it and narrow it in one clause
    - ③ no term, or none of its senses is the one you need → write decidable criteria, and do not
      assume activation. Then recurse once
-2. **What does the borrowed name drag in that you do not want?** Remove it in one clause.
+2. **What does the borrowed term drag in that you do not want?** Remove it in one clause.
 3. **Is the artefact easier to describe than the behaviour?** Then constrain the artefact.
 4. **Which costs more, one false trigger or one missed trigger?** Default narrow.
 
@@ -137,7 +137,7 @@ Each skill's `README.md` answers the same four, about itself:
 | | |
 |---|---|
 | **Case** | ①, ②, or ③ — and why it is not one of the other two |
-| **Side effect removed** | what the borrowed name brings that the body cancels |
+| **Side effect removed** | what the borrowed term brings that the body cancels |
 | **Output form pinned** | the artefact the skill must produce |
 | **Trigger width** | narrow or wide, and which error that choice accepts |
 

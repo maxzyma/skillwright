@@ -8,13 +8,13 @@ disable-model-invocation: true
 
 Answer these questions, then hand off to `skill-creator`.
 
-**1. Which case is the name in?**
+**1. Which case is the term in?**
 
 - ① the sense you need is the term's only sense → borrow it; the body then only removes the side effect and pins the form
 - ② the sense is among its senses but not the dominant one → borrow it and narrow it in one clause (a precising definition)
 - ③ no term, or none of its senses is the one you need → write decidable criteria (a stipulative definition). Do not assume activation. Then recurse once: the criteria you write have vocabulary of their own, and it may be ①
 
-**2. What does the borrowed name drag in that you do not want?** Remove it in one clause. Where the borrowed protocol assumes conditions a single agent cannot meet — evaluator counts, independent passes, a panel — state that limit in the skill's own output.
+**2. What does the borrowed term drag in that you do not want?** Remove it in one clause. Where the borrowed protocol assumes conditions a single agent cannot meet — evaluator counts, independent passes, a panel — state that limit in the skill's own output.
 
 **3. Is the artefact easier to describe than the behaviour?** Then constrain the artefact instead.
 
@@ -27,7 +27,7 @@ Add constraints only after watching one fail.
 Ask the same questions of an existing artefact. Further checks need an artefact to exist:
 
 - **Name against body** — a description forced to retract scope means the name over-claimed. Change the name.
-- **Size against case** — ① should be short. A long body under a ① name means something borrowable was rebuilt.
+- **Size against case** — ① should be short. A long body under a ① term means something borrowable was rebuilt.
 - **Sense drift** — where the body defines a term the name also uses, check the two still agree.
 
 ## Output, then hand off
@@ -35,7 +35,7 @@ Ask the same questions of an existing artefact. Further checks need an artefact 
 Report:
 
 - the case — and on ③, the case of the criteria's own vocabulary
-- the side effect removed and the sense selected — or, on ③, the criteria written in place of a name
+- the side effect removed and the sense selected — or, on ③, the criteria written in place of a term
 - the pinned output form
 - the trigger width and the asymmetry that set it
 
@@ -54,7 +54,7 @@ Keep the following out of the body, and route rather than delete it:
 
 The one justification that earns space is a reason that keeps an instruction from losing to a prior.
 
-## Gotcha: do not invent a name on case ③
+## Gotcha: do not invent a term on case ③
 
 Write the criteria out instead. A fabricated term activates nothing while reading as though it carries authority, so neither you nor a later reader can tell the body is doing all the work.
 
