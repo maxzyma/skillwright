@@ -1,5 +1,7 @@
 # skillwright
 
+**English** · [简体中文](README.zh-CN.md)
+
 Agent skills built to one method — and the method itself.
 
 A `-wright` is someone who makes things: shipwright, playwright, wheelwright. Everything here was
