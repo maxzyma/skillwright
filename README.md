@@ -4,87 +4,94 @@
 
 Agent skills built to one method — and the method itself.
 
-A `-wright` is someone who makes things: shipwright, playwright, wheelwright. Everything here was
-**designed**, not collected. That distinction is the whole point, so it is made checkable: every
-skill ships a **design record** stating the four decisions behind it.
+|  |  |
+|---|---|
+| **Origin** | A published skill that does real work in 321 bytes, because its name carries a practice the model already knows |
+| **Core idea** | Borrow the name; spend the body cancelling what the name drags in and pinning the output form |
+| **Two conditions** | The term must be one the model has seen, *and* the sense you need must be the one it points at |
+| **Where it stops** | Skills that produce a judgement rather than an artefact do not get to be two clauses long |
+| **What makes this repo different** | Every skill ships a **design record**: the four decisions behind it. Cannot fill it, does not go in |
 
-Skills in this repository: [`skill-design`](skills/skill-design) ·
-[`heuristic-evaluation`](skills/heuristic-evaluation). What follows is why they look the way they do.
+## What this is
 
-## What 321 bytes buys
+Two things in one repository: a small set of agent skills, and the method they were built to.
 
-Anthropic's `eli5` skill is **321 bytes**: frontmatter and two lines of body. No audience taxonomy,
-no analogy library, no tone rules, no examples, no checklist, no code.
+A `-wright` is someone who makes things — shipwright, playwright, wheelwright. Everything here was
+designed, not collected. That is a claim, so it is made checkable rather than asserted: each skill
+has a `README.md` beside it stating its case, its removed side effect, its pinned output form and its
+trigger width.
 
-It works because `ELI5` is not a description — it is an established explanation genre with its own
-communities, its own conventions and an enormous number of worked examples on the open internet.
-Naming it pulls all of that in at once, and the pretrained knowledge of "what this genre looks like
-done well" outweighs any audience taxonomy someone could write by hand.
+Skills: [`skill-design`](skills/skill-design) · [`heuristic-evaluation`](skills/heuristic-evaluation)
 
-Provenance, stated precisely because it is often reported wrong: it is by an Anthropic engineer on
-the Claude Code team, distributed through `anthropics/claude-plugins-community` — a **community**
-marketplace Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
-`anthropics/claude-plugins-official`). Employee-authored, community-distributed. That distinction
-matters for what support you can expect, not for what the artefact demonstrates.
+## Origin
 
-Its two body clauses spend themselves on something other than explaining how to explain:
+Anthropic's `eli5` skill is **321 bytes** — frontmatter and two lines of body. No audience taxonomy,
+no analogy library, no tone rules, no examples, no checklist, no code. It produces good explanations
+anyway.
 
-1. **It cancels the name's side effect.** Taken literally, ELI5 produces baby talk — you do not want
-   "imagine you have a box of crayons" about your auth module. So the body restates the audience as
-   someone who knows nothing about the *topic*: the genre's compression is kept, the age is dropped.
-2. **It pins the output form.** An HTML artifact with big pictures and few words. The form then does
-   the rest of the work — you cannot stack jargon inside that constraint.
+Provenance, because this is often reported wrong: it is by an Anthropic engineer on the Claude Code
+team, distributed through `anthropics/claude-plugins-community`, a **community** marketplace
+Anthropic hosts. It is in neither curated catalogue (`anthropics/skills`,
+`anthropics/claude-plugins-official`). Employee-authored, community-distributed — which affects what
+support you can expect, not what the artefact demonstrates.
+
+## Core idea
+
+**`ELI5` is not a description. It is a genre.** It has communities, conventions and an enormous
+number of worked examples on the open internet. Naming it pulls all of that in at once, and the
+pretrained knowledge of what the genre looks like done well outweighs any audience taxonomy someone
+could write by hand.
+
+So the body does not explain how to explain. It does two other things:
+
+1. **Cancels the name's side effect.** Read literally, ELI5 produces baby talk — you do not want
+   "imagine you have a box of crayons" about your auth module. The body restates the audience as
+   someone who knows nothing about the *topic*: the compression is kept, the age is dropped.
+2. **Pins the output form.** An HTML artifact, big pictures, few words. The form then does the rest
+   — you cannot stack jargon inside that constraint.
+
+**The leverage and its correction live in different places.** The genre activation sits in `name` and
+`description`, which is also where trigger routing and the user's own reading happen; the correction
+and the form constraint sit in the body. Neither dilutes the other.
 
 The commit history shows the author tuning exactly these two things and nothing else: `an idiot that
 knows nothing` → `someone who knows nothing`, and `in a HTML page` → `a HTML artifact`. The
-frontmatter `description` was never changed.
+`description` was never changed.
 
-So the leverage sits in the name and the description — which is also where trigger routing looks —
-while the correction and the form constraint sit in the body. The two do not dilute each other.
+## Two conditions, and they are independent
 
-## The lever, and where it stops
+| Axis | Question | Fails when |
+|---|---|---|
+| **Signal strength** | Has the model seen this term at all? | In-house names, personal coinages, team jargon |
+| **Sense alignment** | Of its senses, is the one you need the dominant one? | `design tree` reads as a CAD feature tree, not a hierarchy of design decisions |
 
-**Borrow before you rebuild.** If the behaviour you want already has a widely practised name, use the
-name and spend the body cancelling what it drags in.
+A term can be very strong on the first axis and wrong on the second. **That combination is the one
+people miss** — it produces skills whose bodies assume an activation that is going somewhere else.
 
-Two things have to be true, and they are independent axes:
+## Where the method stops
 
-- **Signal strength** — has the model seen this term at all? In-house and personal names carry nothing.
-- **Sense alignment** — a term can be extremely common and still point elsewhere. `design tree` reads
-  as a CAD feature tree far more often than as a hierarchy of design decisions.
+**Judgement does not compress like execution.** ELI5 produces a thing, so one name mobilises the
+whole practice. A skill that produces a *conclusion* — is this page usable, is this name doing its
+job — activates at best one criterion per term, and the **combination** of criteria is the judgement.
+Composites of several decisions rarely have names of their own, so those bodies do not get short.
 
-A term can be very strong on the first axis and wrong on the second. That combination is the one
-people miss, and it produces skills whose bodies assume an activation that is going to the wrong
-sense.
-
-**The lever is also weaker for judgement than for execution.** ELI5 produces a thing; one name
-mobilises the whole practice, so the body can be two clauses. A skill that produces a *conclusion* —
-is this page usable, is this name doing its job — activates at best one criterion per term, and the
-**combination** of criteria is the judgement. Composites of several decisions rarely have names of
-their own, so those bodies do not get short.
-
-That is not a licence to write long ones. Two moves keep them honest:
+Two moves keep them from getting long by default:
 
 - **Recurse once.** The composite may have no name, but the criteria you write have vocabulary of
-  their own, and it is often borrowable. `skill-design` is a case in point: the whole has no name,
+  their own, and it is often borrowable. `skill-design` is the case in point: the whole has no name,
   yet `precising definition`, `stipulative definition` and `false trigger / missed trigger` each
-  carry a concept the body would otherwise have to explain.
-- **Split if the decisions do not have to be made together.** Several skills that each borrow a name
-  beat one that borrows none.
+  carry a concept the body would otherwise have to spell out.
+- **Split when the decisions need not be made together.** Several skills that each borrow a name beat
+  one that borrows none.
 
-## Where a borrowed protocol over-promises
+**A borrowed name also brings preconditions you may not be able to meet.** Heuristic evaluation
+assumes three to five independent evaluators; Nielsen's own figures put one evaluator at roughly 35%
+of the problems present. One agent is one evaluator. When that happens, the skill says so **in its
+own output** — otherwise a short findings list reads as a clean bill of health.
 
-A method's name brings its whole protocol, including preconditions a single agent cannot meet.
-Heuristic evaluation assumes three to five independent evaluators; Nielsen's own figures put one
-evaluator at roughly 35% of the problems present. One agent is one evaluator.
+## The method, as four questions
 
-The rule here: when the borrowed protocol assumes conditions that do not hold, the skill says so **in
-its own output**, not in a note beside it. Otherwise a short findings list reads as a clean bill of
-health.
-
-## The four questions
-
-Answered before a skill's body is written, and answerable of any skill that already exists:
+Answered before a body is written, and answerable of any skill that already exists:
 
 1. **Which case is the name in?**
    - ① the sense you need is the term's only sense → borrow it; the body then only removes the side
@@ -98,7 +105,9 @@ Answered before a skill's body is written, and answerable of any skill that alre
 
 Then: add constraints only after watching one fail.
 
-## What a design record looks like
+## The design record
+
+Each skill's `README.md` answers the same four, about itself:
 
 | | |
 |---|---|
@@ -107,17 +116,7 @@ Then: add constraints only after watching one fail.
 | **Output form pinned** | the artefact the skill must produce |
 | **Trigger width** | narrow or wide, and which error that choice accepts |
 
-If a skill here cannot fill those four lines, it does not belong here.
-
-## The skills
-
-| Skill | What it does | Trigger |
-|---|---|---|
-| [`skill-design`](skills/skill-design) | Decides a skill's name, its body's job and its trigger width before it is written — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
-| [`heuristic-evaluation`](skills/heuristic-evaluation) | Reviews a page that exists against Nielsen's ten heuristics and WCAG 2.2 AA, reporting only violations found — and stating that one agent is one evaluator. | model-invocable |
-
-Each has a `README.md` beside it carrying its design record, how to tell it is working, and how to
-tell it is not.
+**A skill that cannot fill those four lines does not belong here.**
 
 ## Admission criteria
 
@@ -130,6 +129,15 @@ tell it is not.
 - **No invented methodology names.** A fabricated term activates nothing while reading as though it
   carries authority, so nobody can tell the body is doing all the work.
 
+## The skills
+
+| Skill | What it does | Trigger |
+|---|---|---|
+| [`skill-design`](skills/skill-design) | Decides a skill's name, its body's job and its trigger width before it is written — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
+| [`heuristic-evaluation`](skills/heuristic-evaluation) | Reviews a page that exists against Nielsen's ten heuristics and WCAG 2.2 AA, reporting only violations found — and stating that one agent is one evaluator. | model-invocable |
+
+Each `README.md` also states how to tell the skill is working, and how to tell it is not.
+
 ## Evidence standing
 
 Stated so you can weigh the method rather than take it:
@@ -140,7 +148,7 @@ Stated so you can weigh the method rather than take it:
 | The three name cases | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |
 | Default-narrow triggers | four skills binding to explicit invocation, two authors, one counter-sample | moderate |
-| Execution vs judgement limit | two samples | weak |
+| Judgement vs execution limit | two samples | weak |
 
 Where you hold contrary evidence, prefer it.
 
