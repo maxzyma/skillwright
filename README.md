@@ -12,16 +12,28 @@ Agent skills built to one method — and the method itself.
 | **What follows** | Borrow the term; spend the body cancelling what it drags in and pinning the output form |
 | **Two conditions** | The term must be one the model has seen, *and* the sense you need must be the one it points at |
 | **Where it stops** | Skills that produce a judgement rather than an artefact do not get to be two clauses long |
-| **What makes this repo different** | Every skill ships a **design record**: the four decisions behind it. Cannot fill it, does not go in |
+| **What makes this repo different** | Name and trigger are decided before the body exists — the body is the remainder. All four decisions are recorded per skill; cannot fill the record, does not go in |
 
 ## What this is
 
 Two things in one repository: a small set of agent skills, and the method they were built to.
 
-A `-wright` is someone who makes things — shipwright, playwright, wheelwright. Everything here was
-designed, not collected. That is a claim, so it is made checkable rather than asserted: each skill
-has a `README.md` beside it stating its case, its removed side effect, its pinned output form and its
-trigger width.
+A `-wright` is someone who makes things — shipwright, playwright, wheelwright. But every skill is
+designed by someone, so *designed* on its own claims nothing. The claim here is narrower, and it can
+be checked:
+
+**The name and the trigger are settled before the body exists.** Most skills are written body-first:
+the rules go down, a label goes on top, and the description is whatever ends up describing the rules.
+Here the order is inverted — which existing term to take, what it drags in, what form the output is
+pinned to, and how wide the trigger opens are decided first. **The body is only what those four
+decisions left over.**
+
+Inverting the order leaves evidence behind, which is the reason for saying it out loud:
+
+- every skill's `README.md` states the four decisions, so you can hold the artefact against them
+- that record is the **admission gate, not documentation** — a skill that cannot fill it does not go in
+- the method those four questions come from is in this README, so you can use it to find the skills
+  here that break it
 
 Skills: [`skill-design`](skills/skill-design) · [`heuristic-evaluation`](skills/heuristic-evaluation)
 
