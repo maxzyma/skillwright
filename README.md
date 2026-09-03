@@ -19,14 +19,11 @@ Agent skills built to one method — and the method itself.
 A `-wright` is someone who makes things — shipwright, playwright. But every skill is designed by
 someone; *designed* on its own claims nothing.
 
-**The difference here is order: the name and the trigger are settled before the body exists.** Most
-skills are written body-first — rules go down, a label goes on top, and the description ends up
-describing the rules. Here it runs the other way: which existing term to take, what it drags in, what
-form the output is pinned to, how wide the trigger opens. Four decisions first, and **the body is the
-remainder**.
+**Here the design does not happen in the body. It happens above it — at the name and the trigger.**
+That layer is settled first and the body is its remainder, rather than rules written first and a
+label fitted afterwards.
 
-That order leaves traces, and the questions that produced them are below — enough to audit this
-repository against itself.
+The questions that settle it are below, which is enough to audit this repository against itself.
 
 ## The core idea
 
