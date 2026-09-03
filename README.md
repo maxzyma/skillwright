@@ -12,16 +12,15 @@ Agent skills built to one method — and the method itself.
 | **What follows** | Borrow the term; spend the body cancelling what it drags in and pinning the output form |
 | **Two conditions** | The term must be one the model has seen, *and* the sense you need must be the one it points at |
 | **Where it stops** | Skills that produce a judgement rather than an artefact do not get to be two clauses long |
-| **What makes this repo different** | The first decision is the name, and what the body says follows from it. Every decision is recorded per skill; cannot fill the record, does not go in |
+| **What makes this repo different** | What earns space is decided first, then the name, then the body. Every decision is recorded per skill; cannot fill the record, does not go in |
 
 ## What this is
 
 A `-wright` is someone who makes things — shipwright, playwright. But every skill is designed by
 someone; *designed* on its own claims nothing.
 
-**The first decision here is the name, not what the body says.** Once the name is settled, what is
-left for the body to say is largely settled with it — rather than rules written first and a label
-fitted afterwards.
+**The order here runs: what earns space in the context first, the name next, the body last.** Not
+the other way round — rules written first, a label fitted afterwards.
 
 The questions that settle this are below, which is enough to audit this repository against itself.
 
