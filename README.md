@@ -69,7 +69,7 @@ could write by hand.
 
 So the body does not explain how to explain. It does two other things:
 
-1. **Cancels the name's side effect.** Read literally, ELI5 produces baby talk — you do not want
+1. **Cancels the term's side effect.** Read literally, ELI5 produces baby talk — you do not want
    "imagine you have a box of crayons" about your auth module. The body restates the audience as
    someone who knows nothing about the *topic*: the compression is kept, the age is dropped.
 2. **Pins the output form.** An HTML artifact, big pictures, few words. The form then does the rest
@@ -102,7 +102,7 @@ Composites of several decisions rarely have terms of their own, so those bodies 
 
 Two moves keep them from getting long by default:
 
-- **Recurse once.** The composite may have no name, but the criteria you write have vocabulary of
+- **Recurse once.** The composite may have no term of its own, but the criteria you write have vocabulary of
   their own, and it is often borrowable. `skill-design` is the case in point: the whole has no term,
   yet `precising definition`, `stipulative definition` and `false trigger / missed trigger` each
   carry a concept the body would otherwise have to spell out.
@@ -151,14 +151,14 @@ Each skill's `README.md` answers the same four, about itself:
 - **Preconditions that do not hold get stated in the output**, not in a footnote.
 - **Constraints are added after watching one fail**, not in anticipation.
 - **Criteria are stated with their evidence strength.** Thin is allowed; silent is not.
-- **No invented methodology names.** A fabricated term activates nothing while reading as though it
+- **No invented methodology terms.** A fabricated term activates nothing while reading as though it
   carries authority, so nobody can tell the body is doing all the work.
 
 ## The skills
 
 | Skill | What it does | Trigger |
 |---|---|---|
-| [`skill-design`](skills/skill-design) | Decides a skill's name, its body's job and its trigger width before it is written — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
+| [`skill-design`](skills/skill-design) | Decides what a skill borrows, what its body must therefore say and how wide it triggers — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
 | [`heuristic-evaluation`](skills/heuristic-evaluation) | Reviews a page that exists against Nielsen's ten heuristics and WCAG 2.2 AA, reporting only violations found — and stating that one agent is one evaluator. | model-invocable |
 
 Each `README.md` also states how to tell the skill is working, and how to tell it is not.
@@ -171,7 +171,7 @@ How much each claim rests on:
 |---|---|---|
 | Context as solution space (the core idea) | argued, not measured here; the attention dilution and position effects it leans on are documented in the literature but not reproduced in this repository | argued |
 | Borrowing beats rebuilding | 321 B against a same-named community implementation of ~8 KB doing comparable work | reasonable |
-| The three name cases | one term worked through in full; the cases are asserted, not sampled | thin |
+| The three cases a term can be in | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |
 | Default-narrow triggers | four skills binding to explicit invocation, two authors, one counter-sample | moderate |
 | Judgement vs execution limit | two samples | weak |

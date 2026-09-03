@@ -142,7 +142,7 @@ nothing`，`in a HTML page` → `a HTML artifact`。而 `description` 从头到�
 
 | Skill | 做什么 | 触发 |
 |---|---|---|
-| [`skill-design`](skills/skill-design) | 在写之前定下一个 skill 的命名、正文的职责和触发宽度；也可以反过来诊断已有的 skill。构建交给 `skill-creator` | 仅显式调用 |
+| [`skill-design`](skills/skill-design) | 在写之前定下一个 skill 征用什么、正文因此还要写什么、触发口开多宽；也可以反过来诊断已有的 skill。构建交给 `skill-creator` | 仅显式调用 |
 | [`heuristic-evaluation`](skills/heuristic-evaluation) | 按 Nielsen 十条启发式与 WCAG 2.2 AA 评审已存在的页面，只报实际发现的违反 —— 并声明一个 agent 只是一个评估者 | 模型可调 |
 
 每份 `README.md` 还写了怎么看出它在生效、以及怎么看出它没生效。
@@ -155,7 +155,7 @@ nothing`，`in a HTML page` → `a HTML artifact`。而 `description` 从头到�
 |---|---|---|
 | 上下文即解空间（核心思想） | 是论证，不是本仓的测量；它倚赖的注意力稀释与位置效应在文献中有记载，但本仓未复现 | 论证 |
 | 征用胜过重建 | 321 B 对一个同名的社区实现（约 8 KB，做的是同类事） | 较可靠 |
-| ①②③ 三档划分 | 只有一个术语被完整走通；三档是断言，不是抽样得来 | 薄 |
+| 一个术语可落的三档 | 只有一个术语被完整走通；三档是断言，不是抽样得来 | 薄 |
 | 钉形态能省字 | 一个实例，且可能只对"一次成型"的产物成立 | 薄 |
 | 触发默认收窄 | 四个 skill 绑定显式调用，来自两位作者；有一个反例 | 中等 |
 | 判断类 vs 执行类的边界 | 两个样本 | 弱 |

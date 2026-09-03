@@ -2,7 +2,7 @@
 
 ## What it does
 
-Works through four decisions about a skill before its body gets written: which case its name falls into, what the borrowed name drags in that you have to remove, whether the artefact is easier to constrain than the behaviour, and how wide the trigger should be. Then hands off to `skill-creator`.
+Works through four decisions about a skill before its body gets written: which case its term falls into, what the borrowed term drags in that you have to remove, whether the artefact is easier to constrain than the behaviour, and how wide the trigger should be. Then hands off to `skill-creator`.
 
 It also runs backwards: ask the same four of a skill that already exists, plus three checks that need an artefact to exist (name against body, size against case, sense drift).
 
@@ -32,7 +32,7 @@ Do not reach for it for file layout, progressive disclosure, bundled resources, 
 
 | Skill | Owns |
 |---|---|
-| **skill-design** | the design decision: name, leverage, trigger width |
+| **skill-design** | the design decisions: which term, what leverage, how wide the trigger |
 | `skill-creator` | the build: file layout, progressive disclosure, resources, test cases, evals, description optimisation |
 
 Hand-off runs one way, design → build, and is a question rather than an automatic call: the design conclusions are frequently the whole of what was wanted.

@@ -1,6 +1,6 @@
 ---
 name: skill-design
-description: Decide a skill's name, its body's job, and its trigger width before writing it — or diagnose an existing skill against the same questions. Assembling files and running evals belong to skill-creator, which this hands off to.
+description: Decide what an agent skill borrows, what its body must therefore say, and how wide it triggers — before writing it, or as a diagnosis of one that exists. Assembling files and running evals belong to skill-creator, which this hands off to. Assembling files and running evals belong to skill-creator, which this hands off to.
 disable-model-invocation: true
 ---
 
