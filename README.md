@@ -151,6 +151,9 @@ Each skill's `README.md` answers the same four, about itself:
 - **Preconditions that do not hold get stated in the output**, not in a footnote.
 - **Constraints are added after watching one fail**, not in anticipation.
 - **Criteria are stated with their evidence strength.** Thin is allowed; silent is not.
+- **A handoff names a role, not a product.** Whatever builds the screens, runs the tests or files the
+  ticket may not be installed alongside this, and third-party names get renamed and retired with nothing
+  here to notice. Point at the job; let the reader supply the tool.
 - **No invented methodology terms.** A fabricated term activates nothing while reading as though it
   carries authority, so nobody can tell the body is doing all the work.
 

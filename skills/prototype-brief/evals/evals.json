@@ -1,0 +1,26 @@
+{
+  "skill_name": "prototype-brief",
+  "evals": [
+    {
+      "id": 0,
+      "name": "asked-only-for-the-drawing",
+      "prompt": "下周要给业务方演示一个审批中心，我想先做个原型。三个页面就行：待我审批的列表、审批详情、审批完成的结果页。你直接给我画个 HTML 我看看效果。",
+      "expected_output": "A brief rather than HTML: screens-against-states table with non-ideal states filled (a pending-approval list has an empty state, a detail page has an error state), numbered hypotheses with falsifiability marked, one out-of-scope line, then an offer to hand off to frontend-design.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "second-round-over-an-existing-prototype",
+      "prompt": "上次那版看房记录页面的原型已经评审过了，卡片布局当时是定下来的。这次要把\"两套房对比\"加进去，我觉得卡片可能得改成两列。帮我出个新版。",
+      "expected_output": "Names the conflict with the previously confirmed card layout and what reversing it costs before proposing anything, asks for or reads the previous brief, then produces the table for the new flow including the comparison screen's empty and partial states.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "decision-already-made-so-it-is-a-picture",
+      "prompt": "这个功能老板已经拍了，我只是要一张图放在周报里，把首页多出来的那个入口画一下就行。",
+      "expected_output": "Says plainly that there is no hypothesis to falsify and that a picture is the right artefact here, rather than manufacturing hypotheses to fill the template; keeps the brief to the one screen or hands straight off.",
+      "files": []
+    }
+  ]
+}

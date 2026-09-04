@@ -10,7 +10,7 @@ It reviews. It does not design, restyle or rebuild.
 
 Ask for a review, audit or critique of a page or site, or for an accessibility check. The skill is model-invocable: a missed trigger means a review silently does not happen, which costs more than an unwanted one.
 
-For generating or restyling UI, `frontend-design` owns that and holds the broad trigger for it.
+Generating or restyling UI belongs to whichever UI-building skill or tool this project uses, which holds the broad trigger for it.
 
 ## It's working if
 
@@ -35,7 +35,7 @@ One agent is one evaluator. So a clean-looking report from this skill means "one
 | Skill | Owns |
 |---|---|
 | **heuristic-evaluation** | finding problems in a page that exists |
-| `frontend-design` | building and restyling pages |
+| whichever UI-building skill or tool you have | building and restyling pages |
 
 ## Design record
 
@@ -44,5 +44,5 @@ One agent is one evaluator. So a clean-looking report from this skill means "one
 | **Case** | ① — `heuristic evaluation` is the established name of the method (Nielsen & Molich, 1990) and, as a fixed phrase, carries that sense. The competing sense in software is "heuristic evaluation **function**" in game search, which normally appears with the noun and in an algorithmic context. |
 | **Side effect removed** | Two. The method's ceremony — walking all ten heuristics whether or not they apply — is cut by requiring only violations found. Its assumption of three to five evaluators cannot be met by one agent, so the coverage limit is pushed into the skill's own output rather than left in these notes. |
 | **Output form pinned** | One severity-ordered table with four named columns, followed by a statement of what went unevaluated. |
-| **Trigger width** | Model-invocable. A missed review costs more than an unwanted one, and the description carves the boundary against `frontend-design` by naming it. |
+| **Trigger width** | Model-invocable. A missed review costs more than an unwanted one, and the description carves the boundary against UI-building by naming the role rather than a product — the neighbour is not guaranteed to be installed. |
 | **Deliberate extension** | WCAG conformance is not heuristic evaluation — one is expert judgement against heuristics, the other line-by-line checking against a specification. Both are in scope here; the body requires them to stay distinguishable in the table. |

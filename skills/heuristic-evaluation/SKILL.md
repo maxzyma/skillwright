@@ -1,6 +1,6 @@
 ---
 name: heuristic-evaluation
-description: Review an existing web page or site against Nielsen's 10 usability heuristics and WCAG 2.2 AA, reporting only the violations actually found. Use when the user asks to review, audit, critique, or find problems in a page or site that already exists — including accessibility checks. NOT for generating, restyling, or beautifying UI; use frontend-design for that.
+description: Review an existing web page or site against Nielsen's 10 usability heuristics and WCAG 2.2 AA, reporting only the violations actually found. Use when the user asks to review, audit, critique, or find problems in a page or site that already exists — including accessibility checks. NOT for generating, restyling, or beautifying UI — that belongs to whichever UI-building skill or tool you have.
 ---
 
 # Heuristic Evaluation
