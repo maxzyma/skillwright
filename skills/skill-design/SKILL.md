@@ -18,7 +18,7 @@ Answer these questions, then hand off to `skill-creator`.
 
 **3. Is the artefact easier to describe than the behaviour?** Then constrain the artefact instead.
 
-**4. Which costs more, one false trigger or one missed trigger?** Default narrow; the lever is `disable-model-invocation: true`. Narrow when the skill overlaps a broader one, when its subject recurs during ordinary work, or when it is meta. Where a neighbour holds the same phrases, name it as a handoff rather than writing a disclaimer.
+**4. Which costs more, one false trigger or one missed trigger?** Default narrow; the lever is `disable-model-invocation: true`. Narrow when the skill overlaps a broader one, when its subject recurs during ordinary work, or when it is meta. Where a neighbour holds the same phrases, express the boundary as a handoff rather than a disclaimer — and name the role, not the implementation.
 
 Add constraints only after watching one fail.
 

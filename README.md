@@ -126,7 +126,8 @@ Answered before a body is written, and answerable of any skill that already exis
      assume activation. Then recurse once
 2. **What does the borrowed term drag in that you do not want?** Remove it in one clause.
 3. **Is the artefact easier to describe than the behaviour?** Then constrain the artefact.
-4. **Which costs more, one false trigger or one missed trigger?** Default narrow.
+4. **Which costs more, one false trigger or one missed trigger?** Default narrow, and where a neighbour
+   holds the same phrases, hand off to the role rather than to an implementation.
 
 Then: add constraints only after watching one fail.
 
