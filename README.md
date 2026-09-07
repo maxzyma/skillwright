@@ -173,7 +173,7 @@ How much each claim rests on:
 
 | Claim | Support | Weight |
 |---|---|---|
-| Context as solution space (the core idea) | argued, not measured here; the attention dilution and position effects it leans on are documented in the literature but not reproduced in this repository | argued |
+| Context as solution space (the core idea) | argued, not measured here — but Anthropic's own `prompt-audit` reaches the same conclusion independently, including that cruft is not length and a deletion must never be argued from character count | argued, independently corroborated |
 | Borrowing beats rebuilding | 321 B against a same-named community implementation of ~8 KB doing comparable work | reasonable |
 | The three cases a term can be in | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |

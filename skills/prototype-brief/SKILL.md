@@ -1,6 +1,6 @@
 ---
 name: prototype-brief
-description: Decide what a prototype has to contain before anyone draws it — which screens, which state of each, and which assumption the prototype exists to falsify. Use this whenever someone is about to mock up, wireframe, sketch or "just quickly put together" a prototype, screen, flow or demo and no screens-against-states inventory exists yet, including when they ask only for the drawing. The drawing itself belongs to whichever UI-building skill or tool is at hand, which this hands the table to.
+description: Decide what a prototype has to contain before anyone draws it — which screens, which state of each, and which assumption the prototype exists to falsify. Use this whenever a prototype or a set of screens is about to be produced and no screens-against-states inventory exists yet — including when the request is only for the drawing. The drawing itself belongs to whichever UI-building skill or tool is at hand, which this hands the table to.
 ---
 
 # Prototype Brief
