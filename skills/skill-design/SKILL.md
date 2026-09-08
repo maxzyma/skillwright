@@ -20,15 +20,13 @@ Answer these questions, then hand off to `skill-creator`.
 
 **4. Which costs more, one false trigger or one missed trigger?** Default narrow; the lever is `disable-model-invocation: true`. Narrow when the skill overlaps a broader one, when its subject recurs during ordinary work, or when it is meta. Where a neighbour holds the same phrases, express the boundary as a handoff rather than a disclaimer — and name the role, not the implementation.
 
-Add a constraint after watching it fail — and only if the failure would recur past the session that saw it.
+Whether a line is needed is observed, not reasoned: add it after a failure that would recur past the session that saw it, remove it once the failure it prevented no longer reproduces on the target model, and without an eval to observe either, treat both directions as untested.
 
 ## Diagnosis
 
-Ask the same questions of an existing artefact. With an eval, rebuild from the smallest body that preserves the contract and let the eval catch regressions; without one, audit line by line — a removal you cannot test is a hypothesis.
+Ask the same questions of an existing artefact. Further checks need an artefact to exist:
 
-Further checks need an artefact to exist:
-
-- **Provenance** — for each constraint: which failure did it prevent, and does that failure still reproduce on the target model? A constraint nobody can justify is a removal candidate; asking whether the model might still need it keeps everything.
+- **Provenance** — which failure did each constraint prevent? A constraint nobody can justify is a removal candidate; asking whether the model might still need it keeps everything.
 - **Name against body** — a description forced to retract scope means the name over-claimed. Change the name.
 - **Size against case** — ① should be short. A long body under a ① term means something borrowable was rebuilt.
 - **Sense drift** — where the body defines a term the name also uses, check the two still agree.
