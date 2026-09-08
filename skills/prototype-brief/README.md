@@ -60,5 +60,33 @@ Per-criterion weights for the method are in the [repository README](../../README
 
 Specific to this skill: the five-state axis is a long-standing product-design practice rather than a
 measured result here, and the claim that filling the non-ideal states early is cheaper than discovering
-them late is **argued, not measured**. Untested against real prototyping sessions at the time of
-writing.
+them late is **argued, not measured**.
+
+### One paired run, 2026-09-08
+
+Three prompts, each answered twice — once with this skill, once by a model given the same prompt and
+nothing else.
+
+**What the run shows.** All three baselines produced a drawn artefact straight away (two HTML pages,
+one SVG/PNG diagram). All three with-skill runs produced a brief and drew nothing. The pull toward
+drawing fired every time and was held every time, which is what a `Gotcha` is for.
+
+**What it does not show.** That the brief's fields improve the outcome. The state table, the
+out-of-scope line and the falsifiability marks appear only in the with-skill runs, but whether they
+save rework downstream was not measured. Field presence is not effect.
+
+**One Gotcha lost its evidence.** *The previous version's decisions are not yours to drop* is written
+against a model redesigning from scratch rather than reading what was agreed. In the second-round
+prompt the baseline **also** kept the approved card layout and proposed comparison as a separate
+layer, with reasons. The failure that Gotcha prevents did not reproduce here. It stays — one run
+without a failure is not evidence the prior is absent — but it stands on no observation of its own.
+
+**Defects the run found in itself.** Three of four were in the harness, not the skill: an assertion
+forbade the *output* from naming a build tool, which is the rule for the *skill file* (a hardcoded
+neighbour is a dangling reference) and not for a reply naming what is actually installed; another
+demanded a state table from the prompt written to test the escape hatch, contradicting that prompt's
+purpose; a regex missed a falsifiability note that was present in different words. One baseline left a
+browser profile directory in its output folder, so the file inventory had to be recomputed by hand.
+
+**Standing.** n=3, single round, and the same person wrote the skill, the prompts, the assertions and
+the grades. **Self-assessment bias unaddressed; untested by anyone else.**

@@ -40,4 +40,4 @@ Drawing is the pull here: a plausible screen is quick and looks like progress. B
 
 ## Gotcha: the previous version's decisions are not yours to drop
 
-Where a prototype already exists, its layout encodes choices someone agreed to. Redesigning from scratch is easier than reading it, and the new version will look better while quietly discarding them. Read the previous brief and prototype first; where the new flow contradicts a confirmed decision, name the conflict and what reversing it costs before anything changes.
+Where a prototype already exists, its layout encodes choices someone agreed to. Read the previous brief and prototype first; where the new flow contradicts a confirmed decision, name the conflict and what reversing it costs before anything changes.
