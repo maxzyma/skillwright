@@ -166,6 +166,7 @@ Each skill's `README.md` answers the same four, about itself:
 |---|---|---|
 | [`skill-design`](skills/skill-design) | Decides what a skill borrows, what its body must therefore say and how wide it triggers — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
 | [`heuristic-evaluation`](skills/heuristic-evaluation) | Reviews a page that exists against Nielsen's ten heuristics and WCAG 2.2 AA, reporting only violations found — and stating that one agent is one evaluator. | model-invocable |
+| [`prototype-brief`](skills/prototype-brief) | Decides what a prototype must contain before it is drawn — screens against their states, the hypothesis it exists to falsify, and what it leaves out — then hands the table to whatever builds the screens. | model-invocable |
 
 Each `README.md` also states how to tell the skill is working, and how to tell it is not.
 

@@ -146,6 +146,7 @@ nothing`，`in a HTML page` → `a HTML artifact`。而 `description` 从头到�
 |---|---|---|
 | [`skill-design`](skills/skill-design) | 在写之前定下一个 skill 征用什么、正文因此还要写什么、触发口开多宽；也可以反过来诊断已有的 skill。构建交给 `skill-creator` | 仅显式调用 |
 | [`heuristic-evaluation`](skills/heuristic-evaluation) | 按 Nielsen 十条启发式与 WCAG 2.2 AA 评审已存在的页面，只报实际发现的违反 —— 并声明一个 agent 只是一个评估者 | 模型可调 |
+| [`prototype-brief`](skills/prototype-brief) | 在动手画之前定下原型必须包含什么：屏×状态表、它要证伪的假设、以及本次不做什么；再把表交给画屏的那个东西 | 模型可调 |
 
 每份 `README.md` 还写了怎么看出它在生效、以及怎么看出它没生效。
 
