@@ -142,6 +142,7 @@ Each skill's `README.md` answers the same four, about itself:
 | **Side effect removed** | what the borrowed term brings that the body cancels |
 | **Output form pinned** | the artefact the skill must produce |
 | **Trigger width** | narrow or wide, and which error that choice accepts |
+| **Generation** | the model generation the criteria were checked against — they expire, and a record with no vintage cannot be audited |
 
 **A skill that cannot fill those four lines does not belong here.**
 

@@ -45,6 +45,7 @@ Hand-off runs one way, design → build, and is a question rather than an automa
 | **Side effect removed** | From the ② borrow: `design` also reads as visual design, and as a whole activity that includes building the thing. The description narrows it in one clause — assembling files and running evals belong to `skill-creator` — which is why the boundary comes out as a handoff rather than a disclaimer. |
 | **Output form pinned** | A four-line design summary: case, what was removed or written in its place, the pinned form, the trigger width and its cost. |
 | **Trigger width** | Explicit invocation only, via `disable-model-invocation: true`. The skill is meta, so a false trigger is near-certain in any conversation about skills, while a missed trigger costs little — its subject is a deliberate act, so whoever needs it will ask. |
+| **Generation** | Checked against the 2026-09 frontier generation (Claude Opus 5 / Fable 5.1, GPT-5.5). Untested on smaller models, where activation by named practice is unreliable and the body has to be spelled out regardless. **Re-ask every criterion here at the next release** — the answer to "is this line still needed" expires with the prior it was written against. |
 
 ## Evidence standing
 

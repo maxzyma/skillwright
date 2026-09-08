@@ -52,6 +52,7 @@ was wanted.
 | **Side effect removed** | A design brief drags in client-agency ceremony: background, brand values, deliverable lists, timeline, budget. The body admits only the table, the hypotheses and the out-of-scope line. One inherited property is kept on purpose — a brief is agreed against what was already settled, which is what the second Gotcha enforces. |
 | **Output form pinned** | One screens-against-states table, a numbered hypothesis list each marked falsifiable-or-not with the observation that would settle it, and a single out-of-scope line. |
 | **Trigger width** | Model-invocable, and the description binds to the moment before drawing. The asymmetry runs the other way from most meta skills: skipping the state inventory is invisible to whoever skipped it, so a missed trigger costs more than a false one. The boundary against whatever holds the broad trigger for building UI is written as a handoff rather than a disclaimer, and by role rather than by product name — the neighbour is not guaranteed to be installed. |
+| **Generation** | Checked against the 2026-09 frontier generation (Claude Opus 5 / Fable 5.1, GPT-5.5). Untested on smaller models, where activation by named practice is unreliable and the body has to be spelled out regardless. **Re-ask every criterion here at the next release** — the answer to "is this line still needed" expires with the prior it was written against. |
 
 ## Evidence standing
 

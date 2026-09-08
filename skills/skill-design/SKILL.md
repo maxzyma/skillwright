@@ -39,6 +39,7 @@ Report:
 - the side effect removed and the sense selected — or, on ③, the criteria written in place of a term
 - the pinned output form
 - the trigger width and the asymmetry that set it
+- the model generation the criteria were checked against
 
 Cut the body back against the exclusions under *the body has one reader* before handing off.
 
