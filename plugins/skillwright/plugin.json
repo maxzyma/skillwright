@@ -1,0 +1,9 @@
+{
+  "name": "skillwright",
+  "description": "Agent skills built to one method — decide what a skill borrows before writing it, review a page that exists, and brief a prototype before it is drawn. Each ships the four decisions behind it.",
+  "author": { "name": "Mazy", "url": "https://github.com/maxzyma/skillwright" },
+  "homepage": "https://github.com/maxzyma/skillwright",
+  "repository": "https://github.com/maxzyma/skillwright",
+  "license": "MIT",
+  "keywords": ["skill-authoring", "prompt-design", "usability", "prototyping"]
+}

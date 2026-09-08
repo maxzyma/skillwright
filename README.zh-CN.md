@@ -168,26 +168,26 @@ nothing`，`in a HTML page` → `a HTML artifact`。而 `description` 从头到�
 
 ## 安装
 
-本仓自身就是一个 plugin marketplace，每个 skill 是可以单独装的一个 plugin：
+本仓自身就是一个 plugin marketplace：
 
 ```bash
 claude plugin marketplace add maxzyma/skillwright
-claude plugin install skill-design@skillwright
+claude plugin install skillwright@skillwright
 ```
 
-条目里**没有钉版本号**，所以 plugin 的版本就是你装它时的那个 commit，`claude plugin update` 把它推到当前。
+装的是三个一起。条目里**没有钉版本号**，所以 plugin 的版本就是你装它时的那个 commit，`claude plugin update` 把它推到当前。
 
-**也可以直接拷目录**，非 Claude Code 的运行时走这条：
+**也可以只拷其中一个 skill 的目录** —— 非 Claude Code 的运行时走这条，想只要一个 skill 也走这条：
 
 ```bash
 git clone https://github.com/maxzyma/skillwright
-cp -R skillwright/skills/skill-design ~/.claude/skills/
+cp -R skillwright/plugins/skillwright/skills/skill-design ~/.claude/skills/
 ```
 
 项目级放项目里的 `.claude/skills/`，全局放 `~/.claude/skills/`；Codex 上同一个目录放 `~/.codex/skills/`。
 
-**两条路读的是同一批文件。** marketplace 清单放在 `skills/` **旁边**，不是套在它外面 —— 这里没有任何
-东西是为 plugin 形态而摆的，所以拷目录不是降级安装。frontmatter 里的 `disable-model-invocation` 是
+**两条路读的是同一批文件。** `plugins/skillwright/` 就是全部分发面；两版 README、方法与证据都留在仓里，
+一次安装都到不了。所以拷一个 skill 目录不是降级安装 —— 是同一批字节。frontmatter 里的 `disable-model-invocation` 是
 Claude Code 的键，别的运行时会忽略它，那时你只能显式调用 —— 而那本来就是这个键想要的效果。
 
 ## 范围

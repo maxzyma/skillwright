@@ -7,40 +7,9 @@
   },
   "plugins": [
     {
-      "name": "skill-design",
-      "displayName": "skill-design",
-      "description": "Decide what an agent skill borrows, what its body must therefore say, and how wide it triggers — before writing it, or as a diagnosis of one that exists. Explicit invocation only.",
-      "source": "./",
-      "strict": false,
-      "skills": ["./skills/skill-design"],
-      "homepage": "https://github.com/maxzyma/skillwright/tree/main/skills/skill-design",
-      "repository": "https://github.com/maxzyma/skillwright",
-      "license": "MIT",
-      "keywords": ["skill-authoring", "prompt-design", "meta"]
-    },
-    {
-      "name": "heuristic-evaluation",
-      "displayName": "heuristic-evaluation",
-      "description": "Review an existing page or site against Nielsen's ten usability heuristics and WCAG 2.2 AA, reporting only the violations found — and stating that one agent is one evaluator.",
-      "source": "./",
-      "strict": false,
-      "skills": ["./skills/heuristic-evaluation"],
-      "homepage": "https://github.com/maxzyma/skillwright/tree/main/skills/heuristic-evaluation",
-      "repository": "https://github.com/maxzyma/skillwright",
-      "license": "MIT",
-      "keywords": ["usability", "accessibility", "wcag", "review"]
-    },
-    {
-      "name": "prototype-brief",
-      "displayName": "prototype-brief",
-      "description": "Decide what a prototype must contain before it is drawn — screens against their states, the hypothesis it exists to falsify, and what it leaves out — then hand the table to whatever builds the screens.",
-      "source": "./",
-      "strict": false,
-      "skills": ["./skills/prototype-brief"],
-      "homepage": "https://github.com/maxzyma/skillwright/tree/main/skills/prototype-brief",
-      "repository": "https://github.com/maxzyma/skillwright",
-      "license": "MIT",
-      "keywords": ["prototyping", "product-design", "ui-states"]
+      "name": "skillwright",
+      "source": "./plugins/skillwright",
+      "description": "skill-design, heuristic-evaluation and prototype-brief. Take one by copying its directory; take the set by installing this."
     }
   ]
 }

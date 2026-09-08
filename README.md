@@ -188,28 +188,30 @@ Where you hold contrary evidence, prefer it.
 
 ## Install
 
-This repository is its own plugin marketplace, and each skill is a plugin you can take on its own:
+This repository is its own plugin marketplace:
 
 ```bash
 claude plugin marketplace add maxzyma/skillwright
-claude plugin install skill-design@skillwright
+claude plugin install skillwright@skillwright
 ```
 
-The entries carry no pinned version, so a plugin's version is the commit it was installed from and
-`claude plugin update` moves it to the current one.
+That installs all three. The entry carries no pinned version, so the plugin's version is the commit
+it was installed from and `claude plugin update` moves it to the current one.
 
-**Or copy the directory,** which is the path for every runtime that is not Claude Code:
+**Or copy one skill's directory,** which is both the path for runtimes that are not Claude Code and
+the way to take a single skill:
 
 ```bash
 git clone https://github.com/maxzyma/skillwright
-cp -R skillwright/skills/skill-design ~/.claude/skills/
+cp -R skillwright/plugins/skillwright/skills/skill-design ~/.claude/skills/
 ```
 
 Use `.claude/skills/` in a project for project scope, or `~/.claude/skills/` for every project. On
 Codex the same directory goes in `~/.codex/skills/`.
 
-**Both paths read the same files.** The marketplace manifest sits beside `skills/`, not around it —
-nothing here is arranged for the plugin form, so a copied directory is not a downgraded install. The
+**Both paths read the same files.** `plugins/skillwright/` is the whole distribution surface; the
+READMEs, the method and the evidence stay in the repository and never reach an install. A copied
+skill directory is therefore not a downgraded install — it is the same bytes. The
 frontmatter key `disable-model-invocation` is Claude Code's; other runtimes ignore it and you invoke
 the skill explicitly, which is what that key asks for anyway.
 
