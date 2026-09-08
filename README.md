@@ -129,7 +129,8 @@ Answered before a body is written, and answerable of any skill that already exis
 4. **Which costs more, one false trigger or one missed trigger?** Default narrow, and where a neighbour
    holds the same phrases, hand off to the role rather than to an implementation.
 
-Then: add constraints only after watching one fail.
+Then: add a constraint after watching it fail — and only if the failure would recur past the session
+that saw it.
 
 ## The design record
 
@@ -147,10 +148,11 @@ Each skill's `README.md` answers the same four, about itself:
 ## Admission criteria
 
 - **The body is addressed to a model that already knows the domain.** No argument, no confidence
-  ledgers, no notes to self. The one justification that earns space in a body is a reason that keeps
-  an instruction from losing to a prior — which is what a `Gotcha` section is for.
+  ledgers, no notes to self. The reason a constraint exists stays, one clause beside it; argument written to persuade a
+  reader goes, because the model is not the one who needs convincing.
 - **Preconditions that do not hold get stated in the output**, not in a footnote.
-- **Constraints are added after watching one fail**, not in anticipation.
+- **Constraints are added after watching one fail, and only if it would recur** — one session's stumble
+  is not a rule.
 - **Criteria are stated with their evidence strength.** Thin is allowed; silent is not.
 - **A handoff names a role, not a product.** Whatever builds the screens, runs the tests or files the
   ticket may not be installed alongside this, and third-party names get renamed and retired with nothing
@@ -173,7 +175,7 @@ How much each claim rests on:
 
 | Claim | Support | Weight |
 |---|---|---|
-| Context as solution space (the core idea) | argued, not measured here — but Anthropic's own `prompt-audit` reaches the same conclusion independently, including that cruft is not length and a deletion must never be argued from character count | argued, independently corroborated |
+| Context as solution space (the core idea) | argued, not measured here — but two vendors state it independently and in their own words: Anthropic's `prompt-audit` (cruft is not length; never argue a deletion from character count) and OpenAI's GPT-5.5 guidance (over-specified process "narrows the model's search space") | argued, corroborated by two vendors |
 | Borrowing beats rebuilding | 321 B against a same-named community implementation of ~8 KB doing comparable work | reasonable |
 | The three cases a term can be in | one term worked through in full; the cases are asserted, not sampled | thin |
 | Form-pinning saves words | one instance, and it may hold only for single-shot artefacts | thin |

@@ -1,6 +1,6 @@
 ---
 name: skill-design
-description: Decide what an agent skill borrows, what its body must therefore say, and how wide it triggers — before writing it, or as a diagnosis of one that exists. Assembling files and running evals belong to skill-creator, which this hands off to. Assembling files and running evals belong to skill-creator, which this hands off to.
+description: Decide what an agent skill borrows, what its body must therefore say, and how wide it triggers — before writing it, or as a diagnosis of one that exists. Assembling files and running evals belong to skill-creator, which this hands off to.
 disable-model-invocation: true
 ---
 
@@ -20,12 +20,15 @@ Answer these questions, then hand off to `skill-creator`.
 
 **4. Which costs more, one false trigger or one missed trigger?** Default narrow; the lever is `disable-model-invocation: true`. Narrow when the skill overlaps a broader one, when its subject recurs during ordinary work, or when it is meta. Where a neighbour holds the same phrases, express the boundary as a handoff rather than a disclaimer — and name the role, not the implementation.
 
-Add constraints only after watching one fail.
+Add a constraint after watching it fail — and only if the failure would recur past the session that saw it.
 
 ## Diagnosis
 
-Ask the same questions of an existing artefact. Further checks need an artefact to exist:
+Ask the same questions of an existing artefact. With an eval, rebuild from the smallest body that preserves the contract and let the eval catch regressions; without one, audit line by line — a removal you cannot test is a hypothesis.
 
+Further checks need an artefact to exist:
+
+- **Provenance** — for each constraint: which failure did it prevent, and does that failure still reproduce on the target model? A constraint nobody can justify is a removal candidate; asking whether the model might still need it keeps everything.
 - **Name against body** — a description forced to retract scope means the name over-claimed. Change the name.
 - **Size against case** — ① should be short. A long body under a ① term means something borrowable was rebuilt.
 - **Sense drift** — where the body defines a term the name also uses, check the two still agree.
@@ -52,7 +55,7 @@ Keep the following out of the body, and route rather than delete it:
 - to whatever study produced the criteria — why a criterion holds; what was tried and rejected; how confident you are
 - to a `README.md` beside the skill — what the skill is for; how to tell it is working
 
-The one justification that earns space is a reason that keeps an instruction from losing to a prior.
+Keep the reason a constraint exists — one clause, beside it. Drop argument written to persuade: the model is not the one who needs convincing.
 
 ## Gotcha: do not invent a term on case ③
 

@@ -4,7 +4,7 @@
 
 Works through four decisions about a skill before its body gets written: which case its term falls into, what the borrowed term drags in that you have to remove, whether the artefact is easier to constrain than the behaviour, and how wide the trigger should be. Then hands off to `skill-creator`.
 
-It also runs backwards: ask the same four of a skill that already exists, plus three checks that need an artefact to exist (name against body, size against case, sense drift).
+It also runs backwards: ask the same four of a skill that already exists, plus the checks that need an artefact to exist: provenance of each constraint, name against body, size against case, sense drift.
 
 It produces a decision, not a file. Nothing is built here.
 
@@ -19,7 +19,7 @@ Do not reach for it for file layout, progressive disclosure, bundled resources, 
 ## It's working if
 
 - You can name which of the three cases the skill falls into, and say why it is not one of the other two.
-- The body gets **shorter** as you work through the steps, not longer. Steps 1–3 are subtractions; if your body is growing, you are answering a question that was not asked.
+- The body ends up carrying only what the model cannot know or will not do unprompted — so it **shrinks from an over-specified start and grows from an under-specified one**. If it grows from a start that was already complete, you are answering a question that was not asked.
 - You can state what the trigger width costs — which error you chose to make — rather than only that you chose narrow or wide.
 - On a diagnosis, at least one finding points at the name or the description, not only at the body. A design review that only ever finds wording problems is not reaching the design.
 
@@ -49,10 +49,10 @@ Hand-off runs one way, design → build, and is a question rather than an automa
 ## Evidence standing
 
 Per-criterion weights are in the [repository README](../../README.md#evidence-standing), alongside
-the samples they rest on. The body states only that the criteria are thin, because a body addressed
-to an executing model is the wrong place for a ledger.
+the samples they rest on. The body says nothing about evidence standing at all: a body addressed to
+an executing model is the wrong place for a ledger.
 
 One entry belongs here rather than there, because it is about this skill and not about the method:
-it has produced two skills, both by its author, in one sitting, and its diagnostic mode has been run
-three times — twice on that author's own fresh work. **Untested by anyone else; self-assessment bias
+every skill it has produced is by its own author, and its diagnostic mode has only ever been run on
+that author's work. **Untested by anyone else; self-assessment bias
 unaddressed.**
