@@ -188,25 +188,37 @@ Where you hold contrary evidence, prefer it.
 
 ## Install
 
-Nothing is published to a plugin marketplace yet. Until it is, copy the directory:
+This repository is its own plugin marketplace, and each skill is a plugin you can take on its own:
+
+```bash
+claude plugin marketplace add maxzyma/skillwright
+claude plugin install skill-design@skillwright
+```
+
+The entries carry no pinned version, so a plugin's version is the commit it was installed from and
+`claude plugin update` moves it to the current one.
+
+**Or copy the directory,** which is the path for every runtime that is not Claude Code:
 
 ```bash
 git clone https://github.com/maxzyma/skillwright
 cp -R skillwright/skills/skill-design ~/.claude/skills/
 ```
 
-Use `.claude/skills/` in a project for project scope, or `~/.claude/skills/` for every project.
+Use `.claude/skills/` in a project for project scope, or `~/.claude/skills/` for every project. On
+Codex the same directory goes in `~/.codex/skills/`.
 
-Skills here are plain directories with a `SKILL.md`, so they are not Claude-Code-only — copy
-`skills/<name>/` into whatever your agent reads skills from. The frontmatter key
-`disable-model-invocation` is Claude Code's; other runtimes ignore it and you invoke the skill
-explicitly, which is what that key asks for anyway.
+**Both paths read the same files.** The marketplace manifest sits beside `skills/`, not around it —
+nothing here is arranged for the plugin form, so a copied directory is not a downgraded install. The
+frontmatter key `disable-model-invocation` is Claude Code's; other runtimes ignore it and you invoke
+the skill explicitly, which is what that key asks for anyway.
 
 ## Scope
 
-Skills only. Standing instructions — `CLAUDE.md`, `.claude/rules/` — are deliberately out: they are
-not an installable plugin component, so they cannot be versioned or updated through a marketplace,
-and most of their value is in specifics that do not survive leaving the machine they were written on.
+Skills only. Standing instructions — `CLAUDE.md`, `.claude/rules/` — are deliberately out. The plugin
+spec has no rules component at all, so the marketplace above cannot carry them however much you want
+it to; and most of their value is in specifics that do not survive leaving the machine they were
+written on — local paths, secret-handling policy, assumptions about a shared working tree.
 
 ## License
 
