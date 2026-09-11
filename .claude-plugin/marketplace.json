@@ -9,7 +9,7 @@
     {
       "name": "skillwright",
       "source": "./plugins/skillwright",
-      "description": "skill-design, heuristic-evaluation and prototype-brief. Take one by copying its directory; take the set by installing this."
+      "description": "skill-design, ui-review and prototype-brief. Take one by copying its directory; take the set by installing this."
     }
   ]
 }

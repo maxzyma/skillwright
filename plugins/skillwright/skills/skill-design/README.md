@@ -14,13 +14,14 @@ Type `/skill-design`. It is model-invocation-disabled, so it never fires on its 
 
 Reach for it when about to write a skill and you have not yet decided what its name is doing, or when an existing skill misfires and you want to know whether the cause is in its design rather than its wording.
 
-Do not reach for it for file layout, progressive disclosure, bundled resources, test cases or evals. Those are `skill-creator`.
+Do not reach for it for file layout, progressive disclosure, bundled resources, test cases or evals. Those are `skill-creator`. It does name the failure behind each criterion, which is what a case gets written from — but it neither writes the cases nor runs them.
 
 ## It's working if
 
 - You can name which of the three cases the skill falls into, and say why it is not one of the other two.
 - The body ends up carrying only what the model cannot know or will not do unprompted — so it **shrinks from an over-specified start and grows from an under-specified one**. If it grows from a start that was already complete, you are answering a question that was not asked.
 - You can state what the trigger width costs — which error you chose to make — rather than only that you chose narrow or wide.
+- Every criterion in the body comes back paired with the failure it prevents. A criterion whose failure nobody can name cannot be tested later, and is a removal candidate now.
 - On a diagnosis, at least one finding points at the name or the description, not only at the body. A design review that only ever finds wording problems is not reaching the design.
 
 ## It's not working if

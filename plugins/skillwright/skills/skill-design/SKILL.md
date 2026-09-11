@@ -40,6 +40,7 @@ Report:
 - the pinned output form
 - the trigger width and the asymmetry that set it
 - the model generation the criteria were checked against
+- each criterion in the body against the failure it prevents — an eval case is written from a named failure, so an unnamed one cannot be tested
 
 Cut the body back against the exclusions under *the body has one reader* before handing off.
 
