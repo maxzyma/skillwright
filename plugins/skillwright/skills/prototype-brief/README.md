@@ -14,9 +14,9 @@ It is model-invocable and fires on the way into prototyping work, including when
 for the drawing. That is deliberate: whoever skips the states usually does not know they skipped them,
 so a missed trigger costs more than an unwanted one.
 
-Do not reach for it to build, restyle or review a page. Building belongs to whichever UI-building skill
-or tool this project uses; reviewing what already exists is `heuristic-evaluation`, which ships beside
-this one.
+Do not reach for it to build, restyle or review. Building belongs to whichever UI-building skill or
+tool this project uses; reviewing an interface you can already point at is `ui-review`, which ships
+beside this one.
 
 ## It's working if
 
@@ -39,7 +39,7 @@ this one.
 |---|---|
 | **prototype-brief** | what the prototype must contain, and what it is for |
 | whichever UI-building skill or tool you have | building and restyling the screens |
-| `heuristic-evaluation` | finding problems in a page that already exists |
+| [`ui-review`](../ui-review) | finding problems in an interface you can point at |
 
 Hand-off runs one way and is a question, not an automatic call — the brief is often the whole of what
 was wanted.
