@@ -24,6 +24,12 @@ Ask for a review, audit or critique of an interface, or for an accessibility che
 - Severity ratings appear as bare numbers with no basis stated.
 - The report was produced without the interface having been looked at — a live page not opened in a browser, a mock not viewed.
 
+## What it is measured to add
+
+Against the same markup with no skill in play, a frontier model finds the same defects — in one controlled run it found slightly more. What separates the two is not detection: it is that the reviewed output says which judgements it could not make, says that one pass by one evaluator is not an audit, and puts the findings in a form you can compare across pages.
+
+So the thing to expect from it is a report you can trust the shape of, not a longer list of problems. Measured 2026-09-11 at n=2 with the same person writing the skill, the cases and the grading.
+
 ## Coverage, and why the report has to admit it
 
 Heuristic evaluation assumes three to five independent evaluators. Nielsen's figures put a single evaluator at roughly 35% of the problems present — about 42% of the major ones, 32% of the minor — with five evaluators reaching roughly 75%.
