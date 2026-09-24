@@ -148,6 +148,7 @@ nothing`，`in a HTML page` → `a HTML artifact`。而 `description` 从头到�
 | [`skill-design`](plugins/skillwright/skills/skill-design) | 在写之前定下一个 skill 征用什么、正文因此还要写什么、触发口开多宽；也可以反过来诊断已有的 skill。构建交给 `skill-creator` | 仅显式调用 |
 | [`ui-review`](plugins/skillwright/skills/ui-review) | 评审一个能指着说话的界面（活页面／原型／设计稿），对照一个给定标准，只报实际发现的违反 —— 并声明一个 agent 只是一个评估者 | 模型可调 |
 | [`prototype-brief`](plugins/skillwright/skills/prototype-brief) | 在动手画之前定下原型必须包含什么：屏×状态表、它要证伪的假设、以及本次不做什么；再把表交给画屏的那个东西 | 模型可调 |
+| [`naming`](plugins/skillwright/skills/naming) | 按使用任务生成或比较名称，给出取舍与待验证项 | 模型可调 |
 
 每份 `README.md` 还写了怎么看出它在生效、以及怎么看出它没生效。
 
@@ -175,7 +176,7 @@ claude plugin marketplace add maxzyma/skillwright
 claude plugin install skillwright@skillwright
 ```
 
-装的是三个一起。条目里**没有钉版本号**，所以 plugin 的版本就是你装它时的那个 commit，`claude plugin update` 把它推到当前。
+安装的是上表列出的全部 skill。条目里**没有钉版本号**，所以 plugin 的版本就是你装它时的那个 commit，`claude plugin update` 把它推到当前。
 
 **也可以只拷其中一个 skill 的目录** —— 非 Claude Code 的运行时走这条，想只要一个 skill 也走这条：
 

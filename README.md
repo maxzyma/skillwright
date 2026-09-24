@@ -168,6 +168,7 @@ Each skill's `README.md` answers the same four, about itself:
 | [`skill-design`](plugins/skillwright/skills/skill-design) | Decides what a skill borrows, what its body must therefore say and how wide it triggers — or diagnoses one that exists. Hands off to `skill-creator` for the build. | explicit only |
 | [`ui-review`](plugins/skillwright/skills/ui-review) | Reviews an interface you can point at — a live page, a prototype, a mock — against a stated standard, reporting only violations found, and stating that one agent is one evaluator. | model-invocable |
 | [`prototype-brief`](plugins/skillwright/skills/prototype-brief) | Decides what a prototype must contain before it is drawn — screens against their states, the hypothesis it exists to falsify, and what it leaves out — then hands the table to whatever builds the screens. | model-invocable |
+| [`naming`](plugins/skillwright/skills/naming) | Chooses names against their intended use, with tradeoffs and explicit evidence gaps. | model-invocable |
 
 Each `README.md` also states how to tell the skill is working, and how to tell it is not.
 
@@ -195,7 +196,7 @@ claude plugin marketplace add maxzyma/skillwright
 claude plugin install skillwright@skillwright
 ```
 
-That installs all three. The entry carries no pinned version, so the plugin's version is the commit
+That installs the skills listed above. The entry carries no pinned version, so the plugin's version is the commit
 it was installed from and `claude plugin update` moves it to the current one.
 
 **Or copy one skill's directory,** which is both the path for runtimes that are not Claude Code and

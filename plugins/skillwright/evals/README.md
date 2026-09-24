@@ -19,3 +19,5 @@ Two standing rules, both bought with defects found the hard way:
 
 `results/` is git-ignored. Anything worth keeping gets picked out by hand — copying
 the run directory wholesale once dragged an 84 MB browser profile in with it.
+
+[Naming cases and validation status](naming/README.md).
