@@ -1,0 +1,4 @@
+---
+type: llm
+---
+Evaluate the actual candidate words and associations, not statements promising creativity. Require at least two substantively distinct nonliteral images or practices connected to specific aspects of the brief (shared observation, seasonal recurrence, long memory); reject generic “growth/innovation” stories transferable unchanged to any app. Main candidates preserve Arbor plus an English or clearly labelled coined form, with no pinyin or mixed-script substitution. A pronunciation aid is allowed. Easy pronunciation must not be treated as requiring familiar functional vocabulary. No mandatory pun, Latin origin, aesthetic winner, or fixed spelling is required. Pass a provisional creative recommendation with unknown availability explicitly stated. Reject invented word origins or assertions of measured user preference.
